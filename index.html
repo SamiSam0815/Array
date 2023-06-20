@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Old Bottom Array</h1>
+    <script>
+        var getNewArray = "";
+        var list = ["Sami", "Ali", "Uzair", "Kashan","Iqbal","Waseem","Owais"]
+        document.writeln(list+"<br>"+"<br>")
+        var userval = prompt("Which Function You Use?? " + "1 : Insert Before Zero Index "+ "/" + " 2 : Insert After Last Index" + "/" + " 3 : Remove" )
+        
+        if(userval === "First")
+        {
+            getNewArray = prompt("This Value Insert Before Zero Index")
+            list.unshift(getNewArray)
+            document.writeln(list)
+        }
+        else if(userval === "Second")
+        {
+            getNewArray = prompt("This Value Insert After Last Index")
+            list.push(getNewArray)
+            document.writeln(list)
+        }
+        else if(userval === "Third")
+        {
+            list.pop()
+            document.writeln(list)
+        }
+        else
+        {
+            document.writeln("Error : Please Assign Accurate Spelling..")
+        }
+    </script>
+</body>
+</html>
